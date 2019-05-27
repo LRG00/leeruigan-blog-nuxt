@@ -1,14 +1,3 @@
 <template>
-  <div>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-    <p>sss</p>
-  </div>
+  <div>sssssssssssssssss</div>
 </template>

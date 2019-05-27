@@ -1,11 +1,12 @@
 <template>
   <a-list
+    class="main-list"
     itemLayout="vertical"
     size="large"
     :pagination="pagination"
     :dataSource="listData"
   >
-    <div slot="footer"><b>ant design vue</b> footer part</div>
+    <div slot="footer">人家是有底线的...</div>
     <a-list-item slot="renderItem" slot-scope="item" key="item.title">
       <template slot="actions" v-for="{type, text} in actions">
         <span :key="type">
@@ -13,7 +14,7 @@
           {{text}}
         </span>
       </template>
-      <img slot="extra" width="272" alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" />
+      <img slot="extra" height="100" alt="logo" src="../../assets/piece-bird.png" />
       <a-list-item-meta
         :description="item.description"
       >
@@ -29,9 +30,9 @@ const listData = []
 for (let i = 0; i < 23; i++) {
   listData.push({
     href: 'https://vue.ant.design/',
-    title: `ant design vue part ${i}`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description: '内容',
+    title: `我所有的向往`,
+    avatar: '#####',
+    description: '以梦为酒，敬为了梦想执着的人',
   })
 }
 
@@ -46,7 +47,7 @@ export default {
         pageSize: 5,
       },
       actions: [
-        { type: 'star-o', text: '156' },
+        { type: 'heart', text: '156' },
         { type: 'like-o', text: '156' },
         { type: 'message', text: '2' },
       ],
@@ -55,5 +56,11 @@ export default {
 }
 </script>
 <style>
-
+.main-list {
+  margin-bottom: 10px;
+}
+.ant-list-item:hover {
+  background: rgb(212, 192, 238)
+;
+}
 </style>

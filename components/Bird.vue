@@ -5,7 +5,7 @@
 </template>
 <style>
 .bird {
-    width: 150px; height: 49px;
+    width: 100px; height: 60px;
     background: url('../assets/piece-bird.png') no-repeat;
     background-size: contain;
     /* 动画 */
